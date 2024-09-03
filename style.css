@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #ff02b7, #030388);
+  padding: 10px;
+}
+.todo {
+  width: 80%;
+  min-width: 10%;
+  min-width: 500px;
+  background-color: #e99999;
+  /* backdrop-filter: blur(10px);  */
+  margin: 100px auto 20px;
+  padding: 30px 20px 60px;
+  border-radius: 15px;
+}
+.todo h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.todo h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edeef0;
+  border-radius: 15px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 20px;
+  border-radius: 50%;
+}
+button {
+  width: 120px;
+  height: 10px;
+  padding: 15px 15px 35px;
+  /* margin: 10px/; */
+  background: rgb(255, 179, 47);
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+}
+/* .list-container{
+    text-decoration: none;
+
+} */
+ul li {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px 30px 20px 50px;
+  font-size: 25px;
+  margin-top: 10px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-image: url("./unchecked.png");
+  background-position: center;
+  background-size: cover;
+  top: ;
+  left: 60px;
+  bottom: ;
+}
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  content: "";
+  background-image: url("./checked.png");
+}
+
+li span {
+  margin-left: 80%;
+  font-size: 28px;
+  /* border-radius:50%; */
+  color: #030388;
+  /* padding: px; */
+}
+li span:hover{
+    background-color: #ffffffbb;
+}
